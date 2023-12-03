@@ -1,0 +1,156 @@
+.homePageWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  height: 100vh;
+}
+img{
+  width:80px;
+  border-radius: 10rem;
+  box-shadow: 0.05rem 0.01rem 0.5rem 0.2rem rgb(65, 116, 255);
+}
+.formWrapper{
+  background: #282a36;
+  width: 400px;
+  max-width: 70%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0.05rem 0.01rem 0.5rem 0.2rem rgb(65, 255, 223);
+  border-radius: 1rem;
+}
+.inputGroup{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+}
+.mainLable1{
+  color: rgb(65, 116, 255);
+}
+.mainLable{
+  color: aquamarine;
+}
+.createInfo{
+  text-align: center;
+}
+a{
+  color: aquamarine;
+  transition: all 0.3s ease-in-out;
+}
+.inputBox{
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-bottom: 14px;
+  background: #eee;
+  font-size: 16px;
+  font-weight: bold;
+}
+.btn{
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.joinBtn{
+  font-weight: 600;
+  background: rgb(0, 255, 170);
+  width: 100px;
+}
+.joinBtn:hover{
+  background: rgb(0, 189, 132);
+}
+.createInfo div a{
+  text-decoration: none;
+  border-bottom: 1px solid aquamarine;
+  transition: all 0.3s ease-in-out;
+} 
+.createInfo div:hover a, footer a:hover{
+  color: rgb(0, 189, 132);
+  border-color: rgb(0, 189, 132);
+}
+
+.mainWrap{
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  height: 100vh;
+  background-color: #282a36;
+}
+
+.logo{
+  width: 80px;
+  margin: 0 auto;
+}
+
+.aside{
+  background: #1c1e29;
+  padding: 16px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.logo{
+  width: 80px;
+  margin: 0 auto;
+}
+.clientsList{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.client{
+  overflow: hidden;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  align-items: center;
+}
+.asideInner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+.copyBtn{
+  background: rgb(89, 133, 255);
+  color: #fff;
+  width: 135px;
+  font-weight: 600;
+}
+.copyBtn:hover{
+  background: rgb(74, 105, 192);
+}
+.leaveBtn{
+  font-weight: 600;
+  width: 135px;
+  background: rgb(0, 255, 170);
+}
+.leaveBtn:hover{
+  color: #fff;
+  background: rgb(0, 189, 132);
+}
+.editorWrap .CodeMirror{
+  min-height: calc(100vh - 20px);
+  font-size: 20px;
+  line-height: 1.6;
+  padding-top: 20px;
+}
