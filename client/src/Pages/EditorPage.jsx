@@ -62,12 +62,19 @@ const EditorPage = () => {
       };
       init();
       return () => {
-        // socketRef.current.off(ACTIONS.JOIN);
-        // socketRef.current.off(ACTIONS.DISCONNECTED);
-        // socketRef.current.disconnect();
+        socketRef.current?.off(ACTIONS.JOIN);
+        socketRef.current?.off(ACTIONS.DISCONNECTED);
+        socketRef.current?.off(ACTIONS.JOIN);
+        socketRef.current?.disconnect();
         effectRan.current = true;
       };
     }
+    return () => {
+      socketRef.current?.off(ACTIONS.JOIN);
+      socketRef.current?.off(ACTIONS.DISCONNECTED);
+      socketRef.current?.off(ACTIONS.JOIN);
+      socketRef.current?.disconnect();
+    };
   }, []);
 
   const copyRoomId = async () => {
